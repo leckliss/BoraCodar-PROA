@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informando numero</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Informando numero</h2>
+
+        <script>
+
+            let num = parseFloat(prompt("Digite um numero aleatorio"));
+
+            if( num == 0){
+                document.write("<h3> O numero é igual a 0 </h3>");
+            }else if (num > 0) {
+                document.write("<h3> O numero digitado é positivo, pois é: " + num + "</h3>");
+            }else if( num < 0){
+                document.write("<h3> O numero digitado é negativo, pois é: " + num + "</h3>");
+            }
+          
+           
+        
+        </script>
+
+    </div>
+</body>
+
+</html>

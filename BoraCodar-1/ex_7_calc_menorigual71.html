@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando menor que 71</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Calculando menor que 71</h2>
+
+        <script>
+
+            let num1 = parseFloat(prompt("Digite o primeiro numero"));
+            let num2 = parseFloat(prompt("Digite o segundo numero"));
+            let num3 = parseFloat(prompt("Digite o terceiro numero"));
+            let num4 = parseFloat(prompt("Digite o quarto numero"));
+            let num5 = parseFloat(prompt("Digite o quinto numero"));
+            let num6 = parseFloat(prompt("Digite o sexto numero"));
+            
+            let soma = 0.0;
+
+            if (num1 <= 71) {
+                soma += num1;
+            }
+            if (num2 <= 71) {
+                soma += num2;
+            }
+            if (num3 <= 71) {
+                soma += num3;
+            }
+            if (num4 <= 71) {
+                soma += num4;
+            }
+            if (num5 <= 71) {
+                soma += num5;
+            }
+            if (num6 <= 71) {
+                soma += num6;
+            }
+           
+            document.write("<h3> Seus numeros: " + num1 + "," + num2 + "," + num3 + "," + num4 + "," + num5 + "," + num6 +"</h3>");
+            document.write("<h3> Sua soma dos numeros menores ou iguais a 71 é de: " + soma + "</h3>");
+
+        </script>
+
+    </div>
+</body>
+
+</html>

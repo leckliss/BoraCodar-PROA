@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior numero em tela</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Maior numero em tela</h2>
+
+        <script>
+
+            let num1 = parseFloat(prompt("Digite o primeiro numero"));
+            let num2 = parseFloat(prompt("Digite o segundo numero"));
+
+            if( num1 == num2){
+                document.write("<h3>dois valores iguais: " + num1 + "," + num2+ "</h3>");
+            }else if (num1 > num2) {
+                document.write("<h3> " + num1+ "</h3>");
+            }else if( num2 > num1){
+                document.write("<h3> " + num2+ "</h3>");
+            }
+          
+           
+        
+        </script>
+
+    </div>
+</body>
+
+</html>

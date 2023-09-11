@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste media > 5</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Teste media maior que 5</h2>
+
+        <script>
+
+            let num1 = parseFloat(prompt("Digite o primeiro numero"));
+            let num2 = parseFloat(prompt("Digite o segundo numero"));
+            let num3 = parseFloat(prompt("Digite o terceiro numero"));
+            let num4 = parseFloat(prompt("Digite o quarto numero"));
+            
+            let soma = 0.0;
+
+            if (num1 => 0 && num1 <= 10 ) {
+                soma += num1;
+            }
+            if (num2 => 0 && num2 <= 10 ) {
+                soma += num2;
+            }
+            if (num3 => 0 && num3 <= 10 ) {
+                soma += num3;
+            }
+            if (num4 => 0 && num4 <= 10 ) {
+                soma += num4;
+            }
+
+            let media = soma/4;
+           
+           if (media > 5 ) {
+            document.write("<h3> Você passou no teste </h3>");
+           } else {
+            document.write("<h3> Tente novamente </h3>");
+           }
+            
+            
+
+        </script>
+
+    </div>
+</body>
+
+</html>

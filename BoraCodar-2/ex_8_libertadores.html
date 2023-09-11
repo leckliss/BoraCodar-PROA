@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Libertadores COR X PAL</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-image: url(assets/libertadores.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 200px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #efbf56;
+            text-align: center;
+            border-radius: 20px;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/corinthians.png" alt="">
+    <div>
+        <h2>Final da Libertadores</h2>
+
+        <script>
+
+            alert("Bem-vindo a final da Libertadores, aqui você decide quem irá ser vencedor: Corinthians ou Palmeiras? ")
+            let cor = parseFloat(prompt("Quantos gols você deseja para o Corinthians?"));
+            let pal = parseFloat(prompt("Quantos gols você deseja para o Palmeiras?"));
+            
+            
+            if(cor == pal){
+                document.write("<h3> EMPATE, O JOGO FOI PARA OS PENALTIS  </h3>");
+
+                let penal = parseFloat(prompt("Escolha um numero, 1 ou 2: "));
+
+                if(penal == 1){
+                    document.write("<h3> Corinthians Campeão da Libertadores nos penaltis  </h3>");
+                }else if(penal == 2 ){
+                    document.write("<h3> Palmeiras Campeão da Libertadores nos penaltis  </h3>");
+                }else{
+                    document.write("<h3> Corinthians Campeão da Libertadores pois você não escolheu um numero válido </h3>");
+                }
+                
+                
+            }else if(cor > pal){
+                document.write("<h3> Corinthians Campeão da Libertadores durante o tempo regulamentar </h3>");
+            }else{
+                document.write("<h3> Palmeiras Campeão da Libertadores durante o tempo regulamentar </h3>");
+            }
+            
+           
+        
+        </script>
+
+    </div>
+    <img src="assets/palmeiras.png" alt="">
+</body>
+
+</html>

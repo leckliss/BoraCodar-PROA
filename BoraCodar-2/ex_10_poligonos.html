@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconhecendo Poligonos</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-image: url(assets/formas.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 200px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            border: 3px solid black;
+            text-align: center;
+            border-radius: 20px;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <h2>Reconhecendo Poligonos</h2>
+
+        <script>
+
+       
+            let lados = parseFloat(prompt("Digite a Quantidade de lados "));
+            
+
+            if(lados == 3){
+                document.write("<h3> Este é um Triângulo</h3>");
+                let tamanho = parseFloat(prompt("Qual o tamanho desses lados em cm? "));
+                document.write("<h3> Perimetro: " + (tamanho * 3) + "cm </h3>");
+            }
+            else if(lados == 4){
+                document.write("<h3> Este é um Quadrado</h3>");
+                let tamanho = parseFloat(prompt("Qual o tamanho desses lados em cm? "));
+                document.write("<h3> Área: " + (tamanho * tamanho) + "cm </h3>");
+            }
+            else if(lados == 5){
+                document.write("<h3> Este é um Pentagono</h3>");
+                document.write("<h3> Área: Impossivel de calcular </h3>");
+            }
+            else if(lados < 3){
+                document.write("<h3> Isto não é um poligono </h3>");
+            }
+            else{
+                document.write("<h3> Poligono não reconhecido </h3>");
+            }
+        
+        </script>
+
+    </div>
+    
+</body>
+
+</html>

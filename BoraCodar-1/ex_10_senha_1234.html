@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digite 1234</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Digite 1234</h2>
+
+        <script>
+
+           
+            let senha = (prompt("Digite a senha 1234 : "));
+            
+           if (senha == "1234" ) {
+            document.write("<h3> ACESSO PERMITIDO, SENHA CORRETA </h3>");
+           } else {
+            document.write("<h3> ACESSO NEGADO, SENHA INCORRETA </h3>");
+           }
+        </script>
+
+    </div>
+</body>
+
+</html>

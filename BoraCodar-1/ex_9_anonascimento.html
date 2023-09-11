@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você pode votar?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: greenyellow;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Você pode votar?</h2>
+
+        <script>
+
+            let ano = parseInt(prompt("Digite o seu ano de nascimento: "));
+            
+            
+            let nascimento = 2023 - ano;
+
+           if (nascimento >= 16 ) {
+            document.write("<h3> Você pode votar pois já tem mais de 16 </h3>");
+           } else {
+            document.write("<h3> Segundo sua idade você não pode votar </h3>");
+           }
+            
+            
+
+        </script>
+
+    </div>
+</body>
+
+</html>

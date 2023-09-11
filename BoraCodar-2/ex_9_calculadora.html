@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Libertadores COR X PAL</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-image: url(assets/calculador.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div {
+            margin-top: 300px;
+            height: 200px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 20px;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <h2>Calculadora</h2>
+
+        <script>
+
+            let num1 = parseFloat(prompt("Qual o primeiro numero? "));
+            let sinal = parseFloat(prompt("Digite uma opção valida: 1.Adição 2.Subtração 3.Divisão 4.Multiplicação "));
+            let num2 = parseFloat(prompt("Qual o segundo numero? "));
+            
+            if(sinal == 1){
+                document.write("<h3> Resultado da adição: " + (num1 + num2) + "</h3>");
+            }
+            else if(sinal ==2){
+                document.write("<h3> Resultado da subtração: " + (num1 - num2) + "</h3>");
+            }
+            else if(sinal ==3){
+                document.write("<h3> Resultado da divisão: " + (num1 / num2) + "</h3>");
+            }
+            else if(sinal ==4){
+                document.write("<h3> Resultado da multiplicação: " + (num1 * num2) + "</h3>");
+            }
+            else{
+                document.write("<h3> Recarregue a pagina e digite uma opcao valida </h3>");
+            }
+        
+        </script>
+
+    </div>
+    
+</body>
+
+</html>
